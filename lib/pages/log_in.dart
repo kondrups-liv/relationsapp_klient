@@ -59,6 +59,7 @@ class _LogInState extends State<LogIn> {
               ),
               SizedBox(height: 20),
               TextFormField(
+                obscureText: true,
                 controller: passwordController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
