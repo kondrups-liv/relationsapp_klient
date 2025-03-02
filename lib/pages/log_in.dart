@@ -20,8 +20,6 @@ class _LogInState extends State<LogIn> {
   }
 
   void logIn() async {
-    print('email: ${emailController.text}');
-    print('password: ${passwordController.text}');
     UserCredential? userCredential = await Authentication().signin(
       context: context,
       email: emailController.text,

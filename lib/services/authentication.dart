@@ -20,6 +20,5 @@ class Authentication {
       print(e);
       return null;
     }
-    return null;
   }
 }
