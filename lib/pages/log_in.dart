@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:relationsapp_klient/services/authentication.dart';
+import 'package:relationsapp_klient/services/database.dart';
+import 'package:relationsapp_klient/models/client.dart';
 
 class LogIn extends StatefulWidget {
   const LogIn({super.key});
@@ -25,11 +27,12 @@ class _LogInState extends State<LogIn> {
       email: emailController.text,
       password: passwordController.text,
     );
-    userCredential != null
-        ? Navigator.pushReplacementNamed(context, '/home', arguments: {
-            'userCredential': userCredential,
-          })
-        : null;
+    if (userCredential != null) {
+      Client client = await Database().getBasicUserInfo();
+      Navigator.pushReplacementNamed(context, '/home', arguments: {
+        'client': client,
+      });
+    }
   }
 
   @override
