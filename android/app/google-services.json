@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1097286765540",
+    "project_id": "kondrups-d7ef5",
+    "storage_bucket": "kondrups-d7ef5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097286765540:android:33a8dcbc4f11f2a48e15f1",
+        "android_client_info": {
+          "package_name": "com.example.relationsapp_terapeut"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkKDCPZiYkgRuKyheLPBHgbAa0qIAOvxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097286765540:android:3a07c16cbfcf8b068e15f1",
+        "android_client_info": {
+          "package_name": "dk.kondrups.relationsapp_klient"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkKDCPZiYkgRuKyheLPBHgbAa0qIAOvxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
